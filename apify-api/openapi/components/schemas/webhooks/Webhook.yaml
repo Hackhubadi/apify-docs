@@ -25,12 +25,10 @@ properties:
     type: string
     example: wRsJZtadYvn4mBZmm
   isAdHoc:
-    type: boolean
-    nullable: true
+    type: [boolean, "null"]
     example: false
   shouldInterpolateStrings:
-    type: boolean
-    nullable: true
+    type: [boolean, "null"]
     example: false
   eventTypes:
     type: array
@@ -43,29 +41,25 @@ properties:
     type: boolean
     example: false
   doNotRetry:
-    type: boolean
-    nullable: true
+    type: [boolean, "null"]
     example: false
   requestUrl:
     type: string
     example: 'http://example.com/'
   payloadTemplate:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: '{\n \"userId\": {{userId}}...'
   headersTemplate:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: '{\n \"Authorization\": Bearer...'
   description:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: this is webhook description
   lastDispatch:
-    nullable: true
-    allOf: # This allOf is needed to display the nullable properly
+    anyOf:
       - $ref: ./ExampleWebhookDispatch.yaml
+      - type: "null"
   stats:
-    nullable: true
-    allOf:
+    anyOf:
       - $ref: ./WebhookStats.yaml
+      - type: "null"

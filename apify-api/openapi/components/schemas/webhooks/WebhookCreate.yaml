@@ -6,8 +6,7 @@ required:
 type: object
 properties:
   isAdHoc:
-    type: boolean
-    nullable: true
+    type: [boolean, "null"]
     example: false
   eventTypes:
     type: array
@@ -17,33 +16,26 @@ properties:
   condition:
     $ref: ./WebhookCondition.yaml
   idempotencyKey:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: fdSJmdP3nfs7sfk3y
   ignoreSslErrors:
-    type: boolean
-    nullable: true
+    type: [boolean, "null"]
     example: false
   doNotRetry:
-    type: boolean
-    nullable: true
+    type: [boolean, "null"]
     example: false
   requestUrl:
     type: string
     example: 'http://example.com/'
   payloadTemplate:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: '{\n \"userId\": {{userId}}...'
   headersTemplate:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: '{\n \"Authorization\": Bearer...'
   description:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: this is webhook description
   shouldInterpolateStrings:
-    type: boolean
-    nullable: true
+    type: [boolean, "null"]
     example: false

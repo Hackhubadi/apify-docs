@@ -11,18 +11,15 @@ properties:
     type: boolean
     example: true
   disabledReason:
-    type: string
+    type: [string, "null"]
     example: "The \"Selected public Actors for developers\" feature is not enabled for your account. Please upgrade your plan or contact support@apify.com"
-    nullable: true
   disabledReasonType:
-    type: string
+    type: [string, "null"]
     example: "DISABLED"
-    nullable: true
   isTrial:
     type: boolean
     example: false
   trialExpirationAt:
-    type: string
+    type: [string, "null"]
     format: date-time
     example: "2025-01-01T14:00:00.000Z"
-    nullable: true

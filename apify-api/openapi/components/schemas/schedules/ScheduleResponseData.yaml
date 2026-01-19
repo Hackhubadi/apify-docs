@@ -34,8 +34,7 @@ properties:
     type: boolean
     example: true
   description:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: Schedule of actor ...
   createdAt:
     type: string
@@ -46,14 +45,12 @@ properties:
     format: date-time
     example: '2019-12-20T06:33:11.202Z'
   nextRunAt:
-    type: string
+    type: [string, "null"]
     format: date-time
-    nullable: true
     example: '2019-04-12T07:34:10.202Z'
   lastRunAt:
-    type: string
+    type: [string, "null"]
     format: date-time
-    nullable: true
     example: '2019-04-12T07:33:10.202Z'
   actions:
     type: array

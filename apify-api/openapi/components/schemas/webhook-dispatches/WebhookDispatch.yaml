@@ -46,25 +46,20 @@ properties:
     type: object
     properties:
       startedAt:
-        type: string
+        type: [string, "null"]
         format: date-time
-        nullable: true
         example: '2019-12-12T07:34:14.202Z'
       finishedAt:
-        type: string
+        type: [string, "null"]
         format: date-time
-        nullable: true
         example: '2019-12-12T07:34:14.202Z'
       errorMessage:
-        type: string
-        nullable: true
+        type: [string, "null"]
         example: Cannot send request
       responseStatus:
-        type: integer
-        nullable: true
+        type: [integer, "null"]
         example: 200
       responseBody:
-        type: string
-        nullable: true
+        type: [string, "null"]
         example:
           foo: bar

@@ -26,12 +26,10 @@ properties:
     type: string
     example: wRsJZtadYvn4mBZmm
   isAdHoc:
-    type: boolean
-    nullable: true
+    type: [boolean, "null"]
     example: false
   shouldInterpolateStrings:
-    type: boolean
-    nullable: true
+    type: [boolean, "null"]
     example: false
   eventTypes:
     type: array
@@ -50,10 +48,10 @@ properties:
     type: string
     example: 'http://example.com/'
   lastDispatch:
-    nullable: true
-    allOf:
+    anyOf:
       - $ref: ./ExampleWebhookDispatch.yaml
+      - type: "null"
   stats:
-    nullable: true
-    allOf:
+    anyOf:
       - $ref: ./WebhookStats.yaml
+      - type: "null"

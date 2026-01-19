@@ -26,8 +26,7 @@ properties:
     type: string
     example: my-task
   username:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: janedoe
   actUsername:
     type: string
@@ -41,6 +40,6 @@ properties:
     format: date-time
     example: '2018-10-26T13:30:49.578Z'
   stats:
-    nullable: true
-    allOf:
+    anyOf:
       - $ref: ./TaskStats.yaml
+      - type: "null"

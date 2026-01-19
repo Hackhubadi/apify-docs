@@ -11,6 +11,5 @@ properties:
     type: string
     example: my-value
   isSecret:
-    type: boolean
-    nullable: true
+    type: [boolean, "null"]
     example: false

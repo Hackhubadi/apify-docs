@@ -15,12 +15,10 @@ properties:
     type: string
     example: d7b9MDYsbtX5L7XAj
   userId:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: BPWDBd7Z9c746JAnF
   username:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: janedoe
   createdAt:
     type: string
@@ -35,12 +33,10 @@ properties:
     format: date-time
     example: '2019-12-14T08:36:13.202Z'
   actId:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: null
   actRunId:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: null
   consoleUrl:
     type: string
@@ -50,9 +46,8 @@ properties:
     description: "A public link to access keys of the key-value store directly."
     example: 'https://api.apify.com/v2/key-value-stores/WkzbQMuFYuamGv3YF/keys?signature=abc123'
   urlSigningSecretKey:
-    type: string
+    type: [string, "null"]
     description: "A secret key for generating signed public URLs. It is only provided to clients with WRITE permission for the key-value store."
-    nullable: true
   generalAccess:
     $ref: ../common/GeneralAccessEnum.yaml
   stats:

@@ -11,11 +11,11 @@ properties:
     type: string
     example: jF8GGEvbEg4Au3NLA
   runInput:
-    nullable: true
-    allOf:
+    anyOf:
       - $ref: ./ScheduleActionsRunInput.yaml
+      - type: "null"
   runOptions:
-    nullable: true
-    allOf:
+    anyOf:
       - $ref: ./ScheduleActionsRunOptions.yaml
+      - type: "null"
 

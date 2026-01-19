@@ -2,14 +2,11 @@ title: WebhookCondition
 type: object
 properties:
   actorId:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: hksJZtadYvn4mBuin
   actorTaskId:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: asdLZtadYvn4mBZmm
   actorRunId:
-    type: string
-    nullable: true
+    type: [string, "null"]
     example: hgdKZtadYvn4mBpoi

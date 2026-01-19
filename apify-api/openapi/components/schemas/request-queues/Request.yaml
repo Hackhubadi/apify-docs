@@ -27,34 +27,28 @@ properties:
     description: The number of times this request has been retried.
     example: 0
   loadedUrl:
-    type: string
-    nullable: true
+    type: [string, "null"]
     description: The final URL that was loaded, after redirects (if any).
     example: https://apify.com/jobs
   payload:
-    type: object
-    nullable: true
+    type: [object, "null"]
     description: The request payload, typically used with POST or PUT requests.
   headers:
-    type: object
-    nullable: true
+    type: [object, "null"]
     description: HTTP headers sent with the request.
   userData:
     $ref: ./RequestUserData.yaml
   noRetry:
-    type: boolean
-    nullable: true
+    type: [boolean, "null"]
     description: Indicates whether the request should not be retried if processing fails.
     example: false
   errorMessages:
-    type: array
-    nullable: true
+    type: [array, "null"]
     description: Error messages recorded from failed processing attempts.
     items:
       type: string
   handledAt:
-    type: string
+    type: [string, "null"]
     format: date-time
-    nullable: true
     description: The timestamp when the request was marked as handled, if applicable.
     example: '2019-06-16T10:23:31.607Z'

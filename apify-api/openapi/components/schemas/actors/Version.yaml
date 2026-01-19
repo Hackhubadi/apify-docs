@@ -8,18 +8,16 @@ properties:
     type: string
     example: '0.0'
   sourceType:
-    oneOf:
-      - nullable: true
+    anyOf:
       - $ref: ./VersionSourceType.yaml
+      - type: "null"
   envVars:
-    type: array
+    type: [array, "null"]
     items:
       $ref: ./EnvVar.yaml
     description: ''
-    nullable: true
   applyEnvVarsToBuild:
-    type: boolean
-    nullable: true
+    type: [boolean, "null"]
     example: false
   buildTag:
     type: string

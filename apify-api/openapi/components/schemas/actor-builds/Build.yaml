@@ -23,51 +23,47 @@ properties:
     format: date-time
     example: '2019-11-30T07:34:24.202Z'
   finishedAt:
-    type: string
+    type: [string, "null"]
     format: date-time
-    nullable: true
     example: '2019-12-12T09:30:12.202Z'
   status:
     $ref: ../common/ActorJobStatus.yaml
   meta:
     $ref: ./BuildsMeta.yaml
   stats:
-    nullable: true
-    allOf:
+    anyOf:
       - $ref: ./BuildStats.yaml
+      - type: "null"
   options:
-    nullable: true
-    allOf:
+    anyOf:
       - $ref: ./BuildOptions.yaml
+      - type: "null"
   usage:
-    nullable: true
-    allOf:
+    anyOf:
       - $ref: ./BuildUsage.yaml
+      - type: "null"
   usageTotalUsd:
-    type: number
-    nullable: true
+    type: [number, "null"]
     example: 0.02
   usageUsd:
-    nullable: true
-    allOf:
+    anyOf:
       - $ref: ./BuildUsage.yaml
+      - type: "null"
   inputSchema:
-    type: string
-    nullable: true
+    type: [string, "null"]
     deprecated: true # Marked as deprecated in favor of actorDefinition.
     example: '{\n  \"title\": \"Schema for ... }'
   readme:
-    type: string
-    nullable: true
+    type: [string, "null"]
     deprecated: true # Marked as deprecated in favor of actorDefinition.
     example: '# Magic Actor\nThis Actor is magic.'
   buildNumber:
     type: string
     example: 0.1.1
   actorDefinition:
-      allOf:
-        - $ref: "../actors/ActorDefinition.yaml"
-      nullable: true
+    anyOf:
+      - $ref: "../actors/ActorDefinition.yaml"
+      - type: "null"
 example:
   id: HG7ML7M8z78YcAPEB
   actId: janedoe~my-actor
