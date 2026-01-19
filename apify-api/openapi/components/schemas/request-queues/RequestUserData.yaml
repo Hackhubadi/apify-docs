@@ -6,8 +6,8 @@ properties:
   label:
     type: [string, "null"]
     description: Optional label for categorizing the request.
-    example: DETAIL
+    examples: [DETAIL]
   image:
     type: [string, "null"]
     description: Optional image URL associated with the request.
-    example: https://picserver1.eu
+    examples: [https://picserver1.eu]

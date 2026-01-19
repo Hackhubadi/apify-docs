@@ -3,10 +3,10 @@ type: object
 properties:
   actorId:
     type: [string, "null"]
-    example: hksJZtadYvn4mBuin
+    examples: [hksJZtadYvn4mBuin]
   actorTaskId:
     type: [string, "null"]
-    example: asdLZtadYvn4mBZmm
+    examples: [asdLZtadYvn4mBZmm]
   actorRunId:
     type: [string, "null"]
-    example: hgdKZtadYvn4mBpoi
+    examples: [hgdKZtadYvn4mBpoi]

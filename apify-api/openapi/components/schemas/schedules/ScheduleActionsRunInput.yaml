@@ -3,7 +3,7 @@ type: object
 properties:
   body:
     type: [string, "null"]
-    example: '{\n   \"foo\": \"actor\"\n}'
+    examples: ['{\n   \"foo\": \"actor\"\n}']
   contentType:
     type: [string, "null"]
-    example: application/json; charset=utf-8
+    examples: [application/json; charset=utf-8]

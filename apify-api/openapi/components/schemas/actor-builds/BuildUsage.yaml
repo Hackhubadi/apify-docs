@@ -3,4 +3,4 @@ type: object
 properties:
   ACTOR_COMPUTE_UNITS:
     type: [number, "null"]
-    example: 0.08
+    examples: [0.08]

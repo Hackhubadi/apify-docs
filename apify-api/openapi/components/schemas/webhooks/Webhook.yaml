@@ -12,49 +12,49 @@ type: object
 properties:
   id:
     type: string
-    example: YiKoxjkaS9gjGTqhF
+    examples: [YiKoxjkaS9gjGTqhF]
   createdAt:
     type: string
     format: date-time
-    example: '2019-12-12T07:34:14.202Z'
+    examples: ['2019-12-12T07:34:14.202Z']
   modifiedAt:
     type: string
     format: date-time
-    example: '2019-12-13T08:36:13.202Z'
+    examples: ['2019-12-13T08:36:13.202Z']
   userId:
     type: string
-    example: wRsJZtadYvn4mBZmm
+    examples: [wRsJZtadYvn4mBZmm]
   isAdHoc:
     type: [boolean, "null"]
-    example: false
+    examples: [false]
   shouldInterpolateStrings:
     type: [boolean, "null"]
-    example: false
+    examples: [false]
   eventTypes:
     type: array
     items:
       $ref: ./WebhookEventType.yaml
-    example: ACTOR.RUN.SUCCEEDED
+    examples: [ACTOR.RUN.SUCCEEDED]
   condition:
     $ref: ./WebhookCondition.yaml
   ignoreSslErrors:
     type: boolean
-    example: false
+    examples: [false]
   doNotRetry:
     type: [boolean, "null"]
-    example: false
+    examples: [false]
   requestUrl:
     type: string
-    example: 'http://example.com/'
+    examples: ['http://example.com/']
   payloadTemplate:
     type: [string, "null"]
-    example: '{\n \"userId\": {{userId}}...'
+    examples: ['{\n \"userId\": {{userId}}...']
   headersTemplate:
     type: [string, "null"]
-    example: '{\n \"Authorization\": Bearer...'
+    examples: ['{\n \"Authorization\": Bearer...']
   description:
     type: [string, "null"]
-    example: this is webhook description
+    examples: [this is webhook description]
   lastDispatch:
     anyOf:
       - $ref: ./ExampleWebhookDispatch.yaml

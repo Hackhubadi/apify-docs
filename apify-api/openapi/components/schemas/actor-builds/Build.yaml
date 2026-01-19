@@ -11,21 +11,21 @@ type: object
 properties:
   id:
     type: string
-    example: HG7ML7M8z78YcAPEB
+    examples: [HG7ML7M8z78YcAPEB]
   actId:
     type: string
-    example: janedoe~my-actor
+    examples: [janedoe~my-actor]
   userId:
     type: string
-    example: klmdEpoiojmdEMlk3
+    examples: [klmdEpoiojmdEMlk3]
   startedAt:
     type: string
     format: date-time
-    example: '2019-11-30T07:34:24.202Z'
+    examples: ['2019-11-30T07:34:24.202Z']
   finishedAt:
     type: [string, "null"]
     format: date-time
-    example: '2019-12-12T09:30:12.202Z'
+    examples: ['2019-12-12T09:30:12.202Z']
   status:
     $ref: ../common/ActorJobStatus.yaml
   meta:
@@ -44,7 +44,7 @@ properties:
       - type: "null"
   usageTotalUsd:
     type: [number, "null"]
-    example: 0.02
+    examples: [0.02]
   usageUsd:
     anyOf:
       - $ref: ./BuildUsage.yaml
@@ -52,14 +52,14 @@ properties:
   inputSchema:
     type: [string, "null"]
     deprecated: true # Marked as deprecated in favor of actorDefinition.
-    example: '{\n  \"title\": \"Schema for ... }'
+    examples: ['{\n  \"title\": \"Schema for ... }']
   readme:
     type: [string, "null"]
     deprecated: true # Marked as deprecated in favor of actorDefinition.
-    example: '# Magic Actor\nThis Actor is magic.'
+    examples: ['# Magic Actor\nThis Actor is magic.']
   buildNumber:
     type: string
-    example: 0.1.1
+    examples: [0.1.1]
   actorDefinition:
     anyOf:
       - $ref: "../actors/ActorDefinition.yaml"

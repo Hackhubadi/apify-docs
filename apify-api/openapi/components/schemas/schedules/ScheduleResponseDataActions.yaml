@@ -7,13 +7,13 @@ type: object
 properties:
   id:
     type: string
-    example: c6KfSgoQzFhMk3etc
+    examples: [c6KfSgoQzFhMk3etc]
   type:
     type: string
-    example: RUN_ACTOR
+    examples: [RUN_ACTOR]
   actorId:
     type: string
-    example: jF8GGEvbEg4Au3NLA
+    examples: [jF8GGEvbEg4Au3NLA]
   runInput:
     anyOf:
       - $ref: ./ScheduleActionsRunInput.yaml

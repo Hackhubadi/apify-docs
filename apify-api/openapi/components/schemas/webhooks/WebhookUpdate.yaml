@@ -3,35 +3,35 @@ type: object
 properties:
   isAdHoc:
     type: [boolean, "null"]
-    example: false
+    examples: [false]
   eventTypes:
     type: [array, "null"]
     items:
       $ref: ./WebhookEventType.yaml
     description: ''
-    example: ACTOR.RUN.SUCCEEDED
+    examples: [ACTOR.RUN.SUCCEEDED]
   condition:
     anyOf:
       - $ref: ./WebhookCondition.yaml
       - type: "null"
   ignoreSslErrors:
     type: [boolean, "null"]
-    example: false
+    examples: [false]
   doNotRetry:
     type: [boolean, "null"]
-    example: false
+    examples: [false]
   requestUrl:
     type: [string, "null"]
-    example: 'http://example.com/'
+    examples: ['http://example.com/']
   payloadTemplate:
     type: [string, "null"]
-    example: '{\n \"userId\": {{userId}}...'
+    examples: ['{\n \"userId\": {{userId}}...']
   headersTemplate:
     type: [string, "null"]
-    example: '{\n \"Authorization\": Bearer...'
+    examples: ['{\n \"Authorization\": Bearer...']
   description:
     type: [string, "null"]
-    example: this is webhook description
+    examples: [this is webhook description]
   shouldInterpolateStrings:
     type: [boolean, "null"]
-    example: false
+    examples: [false]

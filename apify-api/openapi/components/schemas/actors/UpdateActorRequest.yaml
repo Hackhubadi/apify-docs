@@ -3,29 +3,29 @@ type: object
 properties:
   name:
     type: string
-    example: MyActor
+    examples: [MyActor]
   description:
     type: [string, "null"]
-    example: My favourite actor!
+    examples: [My favourite actor!]
   isPublic:
     type: boolean
-    example: false
+    examples: [false]
   actorPermissionLevel:
     anyOf:
       - $ref: ./ActorPermissionLevel.yaml
       - type: "null"
   seoTitle:
     type: [string, "null"]
-    example: My actor
+    examples: [My actor]
   seoDescription:
     type: [string, "null"]
-    example: My actor is the best
+    examples: [My actor is the best]
   title:
     type: [string, "null"]
-    example: My Actor
+    examples: [My Actor]
   restartOnError:
     type: boolean
-    example: false
+    examples: [false]
     deprecated: true # Use defaultRunOptions.restartOnError instead
   versions:
     type: array

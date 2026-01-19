@@ -3,37 +3,37 @@ type: object
 properties:
   ACTOR_COMPUTE_UNITS:
     type: [number, "null"]
-    example: 3
+    examples: [3]
   DATASET_READS:
     type: [integer, "null"]
-    example: 4
+    examples: [4]
   DATASET_WRITES:
     type: [integer, "null"]
-    example: 4
+    examples: [4]
   KEY_VALUE_STORE_READS:
     type: [integer, "null"]
-    example: 5
+    examples: [5]
   KEY_VALUE_STORE_WRITES:
     type: [integer, "null"]
-    example: 3
+    examples: [3]
   KEY_VALUE_STORE_LISTS:
     type: [integer, "null"]
-    example: 5
+    examples: [5]
   REQUEST_QUEUE_READS:
     type: [integer, "null"]
-    example: 2
+    examples: [2]
   REQUEST_QUEUE_WRITES:
     type: [integer, "null"]
-    example: 1
+    examples: [1]
   DATA_TRANSFER_INTERNAL_GBYTES:
     type: [number, "null"]
-    example: 1
+    examples: [1]
   DATA_TRANSFER_EXTERNAL_GBYTES?:
     type: [number, "null"]
-    example: 3
+    examples: [3]
   PROXY_RESIDENTIAL_TRANSFER_GBYTES:
     type: [number, "null"]
-    example: 34
+    examples: [34]
   PROXY_SERPS:
     type: [integer, "null"]
-    example: 3
+    examples: [3]

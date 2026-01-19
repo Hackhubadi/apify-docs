@@ -3,22 +3,22 @@ type: object
 properties:
   name:
     type: [string, "null"]
-    example: my-schedule
+    examples: [my-schedule]
   isEnabled:
     type: [boolean, "null"]
-    example: true
+    examples: [true]
   isExclusive:
     type: [boolean, "null"]
-    example: true
+    examples: [true]
   cronExpression:
     type: [string, "null"]
-    example: '* * * * *'
+    examples: ['* * * * *']
   timezone:
     type: [string, "null"]
-    example: UTC
+    examples: [UTC]
   description:
     type: [string, "null"]
-    example: Schedule of actor ...
+    examples: [Schedule of actor ...]
   actions:
     type: [array, "null"]
     items:

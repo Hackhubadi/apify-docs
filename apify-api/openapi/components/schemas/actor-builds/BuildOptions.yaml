@@ -3,13 +3,13 @@ type: object
 properties:
   useCache:
     type: [boolean, "null"]
-    example: false
+    examples: [false]
   betaPackages:
     type: [boolean, "null"]
-    example: false
+    examples: [false]
   memoryMbytes:
     type: [integer, "null"]
-    example: 1024
+    examples: [1024]
   diskMbytes:
     type: [integer, "null"]
-    example: 2048
+    examples: [2048]

@@ -3,7 +3,7 @@ type: object
 properties:
   versionNumber:
     type: [string, "null"]
-    example: '0.0'
+    examples: ['0.0']
   sourceType:
     anyOf:
       - $ref: ./VersionSourceType.yaml
@@ -15,9 +15,9 @@ properties:
     description: ''
   applyEnvVarsToBuild:
     type: [boolean, "null"]
-    example: false
+    examples: [false]
   buildTag:
     type: [string, "null"]
-    example: latest
+    examples: [latest]
   sourceFiles:
     $ref: ./VersionSourceFiles.yaml
