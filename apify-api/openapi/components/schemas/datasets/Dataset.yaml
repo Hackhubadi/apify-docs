@@ -38,16 +38,16 @@ properties:
     type: integer
     examples: [5]
   actId:
-    type: [string, "null"]
+    type: [string, 'null']
   actRunId:
-    type: [string, "null"]
+    type: [string, 'null']
   fields:
-    type: [array, "null"]
+    type: [array, 'null']
     items:
       type: string
     description: ''
   schema:
-    type: [object, "null"]
+    type: [object, 'null']
     description: Defines the schema of items in your dataset, the full specification can be found in [Apify docs](/platform/actors/development/actor-definition/dataset-schema)
     example:
       actorSpecification: 1
@@ -72,7 +72,7 @@ properties:
     description: "A public link to access the dataset items directly."
     examples: ['https://api.apify.com/v2/datasets/WkzbQMuFYuamGv3YF/items?signature=abc123']
   urlSigningSecretKey:
-    type: [string, "null"]
+    type: [string, 'null']
     description: "A secret key for generating signed public URLs. It is only provided to clients with WRITE permission for the dataset."
   generalAccess:
     $ref: ../common/GeneralAccessEnum.yaml

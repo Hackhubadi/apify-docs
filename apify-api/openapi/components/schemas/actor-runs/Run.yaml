@@ -29,7 +29,7 @@ properties:
     examples: [7sT5jcggjjA9fNcxF]
     description: ID of the user who started the run.
   actorTaskId:
-    type: [string, "null"]
+    type: [string, 'null']
     examples: [KJHSKHausidyaJKHs]
     description: ID of the Actor task, if the run was started from a task.
   startedAt:
@@ -46,11 +46,11 @@ properties:
     description: Current status of the Actor run.
     $ref: ../common/ActorJobStatus.yaml
   statusMessage:
-    type: [string, "null"]
+    type: [string, 'null']
     examples: [Actor is running]
     description: Detailed message about the run status.
   isStatusMessageTerminal:
-    type: [boolean, "null"]
+    type: [boolean, 'null']
     examples: [false]
     description: Whether the status message is terminal (final).
   meta:
@@ -79,7 +79,7 @@ properties:
     examples: [7sT5jcggjjA9fNcxF]
     description: ID of the Actor build used for this run.
   exitCode:
-    type: [integer, "null"]
+    type: [integer, 'null']
     examples: [0]
     description: Exit code of the Actor run process.
   generalAccess:
@@ -106,24 +106,24 @@ properties:
     examples: ['https://g8kd8kbc5ge8.runs.apify.net']
     description: URL of the container running the Actor.
   isContainerServerReady:
-    type: [boolean, "null"]
+    type: [boolean, 'null']
     examples: [true]
     description: Whether the container's HTTP server is ready to accept requests.
   gitBranchName:
-    type: [string, "null"]
+    type: [string, 'null']
     examples: [master]
     description: Name of the git branch used for the Actor build.
   usage:
     description: Resource usage statistics for the run.
     anyOf:
       - $ref: ./RunUsage.yaml
-      - type: "null"
+      - type: 'null'
   usageTotalUsd:
-    type: [number, "null"]
+    type: [number, 'null']
     examples: [0.2654]
     description: Total cost of the run in USD.
   usageUsd:
     description: Resource usage costs in USD.
     anyOf:
       - $ref: ./RunUsageUsd.yaml
-      - type: "null"
+      - type: 'null'

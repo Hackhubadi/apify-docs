@@ -26,7 +26,7 @@ properties:
     type: string
     examples: [my-task]
   username:
-    type: [string, "null"]
+    type: [string, 'null']
     examples: [janedoe]
   actUsername:
     type: string
@@ -42,4 +42,4 @@ properties:
   stats:
     anyOf:
       - $ref: ./TaskStats.yaml
-      - type: "null"
+      - type: 'null'

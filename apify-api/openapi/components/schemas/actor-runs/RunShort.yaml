@@ -20,7 +20,7 @@ properties:
     type: string
     examples: [HDSasDasz78YcAPEB]
   actorTaskId:
-    type: [string, "null"]
+    type: [string, 'null']
     examples: [KJHSKHausidyaJKHs]
   status:
     $ref: ../common/ActorJobStatus.yaml

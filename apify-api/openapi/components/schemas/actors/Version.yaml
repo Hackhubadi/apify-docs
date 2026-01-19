@@ -10,14 +10,14 @@ properties:
   sourceType:
     anyOf:
       - $ref: ./VersionSourceType.yaml
-      - type: "null"
+      - type: 'null'
   envVars:
-    type: [array, "null"]
+    type: [array, 'null']
     items:
       $ref: ./EnvVar.yaml
     description: ''
   applyEnvVarsToBuild:
-    type: [boolean, "null"]
+    type: [boolean, 'null']
     examples: [false]
   buildTag:
     type: string

@@ -38,13 +38,13 @@ properties:
   notice:
     type: string
   pictureUrl:
-    type: [string, "null"]
+    type: [string, 'null']
     examples: ['https://...']
   userPictureUrl:
-    type: [string, "null"]
+    type: [string, 'null']
     examples: ['https://...']
   url:
-    type: [string, "null"]
+    type: [string, 'null']
     examples: ['https://...']
   stats:
     $ref: ../actors/ActorStats.yaml

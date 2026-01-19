@@ -38,6 +38,6 @@ properties:
     type: integer
     examples: [5]
   actId:
-    type: [string, "null"]
+    type: [string, 'null']
   actRunId:
-    type: [string, "null"]
+    type: [string, 'null']

@@ -23,7 +23,7 @@ properties:
     format: date-time
     examples: ['2019-11-30T07:34:24.202Z']
   finishedAt:
-    type: [string, "null"]
+    type: [string, 'null']
     format: date-time
     examples: ['2019-12-12T09:30:12.202Z']
   status:
@@ -33,28 +33,28 @@ properties:
   stats:
     anyOf:
       - $ref: ./BuildStats.yaml
-      - type: "null"
+      - type: 'null'
   options:
     anyOf:
       - $ref: ./BuildOptions.yaml
-      - type: "null"
+      - type: 'null'
   usage:
     anyOf:
       - $ref: ./BuildUsage.yaml
-      - type: "null"
+      - type: 'null'
   usageTotalUsd:
-    type: [number, "null"]
+    type: [number, 'null']
     examples: [0.02]
   usageUsd:
     anyOf:
       - $ref: ./BuildUsage.yaml
-      - type: "null"
+      - type: 'null'
   inputSchema:
-    type: [string, "null"]
+    type: [string, 'null']
     deprecated: true # Marked as deprecated in favor of actorDefinition.
     examples: ['{\n  \"title\": \"Schema for ... }']
   readme:
-    type: [string, "null"]
+    type: [string, 'null']
     deprecated: true # Marked as deprecated in favor of actorDefinition.
     examples: ['# Magic Actor\nThis Actor is magic.']
   buildNumber:
@@ -63,7 +63,7 @@ properties:
   actorDefinition:
     anyOf:
       - $ref: "../actors/ActorDefinition.yaml"
-      - type: "null"
+      - type: 'null'
 example:
   id: HG7ML7M8z78YcAPEB
   actId: janedoe~my-actor
