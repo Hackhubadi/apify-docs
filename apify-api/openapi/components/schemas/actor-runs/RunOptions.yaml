@@ -11,16 +11,22 @@ properties:
     example: latest
   timeoutSecs:
     type: integer
+    minimum: 0
     example: 300
   memoryMbytes:
     type: integer
+    minimum: 128
+    maximum: 32768
     example: 1024
   diskMbytes:
     type: integer
+    minimum: 0
     example: 2048
   maxItems:
     type: integer
+    minimum: 1
     example: 1000
   maxTotalChargeUsd:
     type: number
+    minimum: 0
     example: 5

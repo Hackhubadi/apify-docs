@@ -21,8 +21,9 @@ properties:
     items:
       type: object
       properties:
-        url: 
+        url:
           type: string
+          format: uri
           example: https://api.apify.com/v2
   paths:
     type: object

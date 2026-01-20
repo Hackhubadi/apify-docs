@@ -10,6 +10,7 @@ properties:
     example: DETAIL
   image:
     type: string
+    format: uri
     nullable: true
     description: Optional image URL associated with the request.
     example: https://picserver1.eu

@@ -48,6 +48,7 @@ properties:
     example: false
   requestUrl:
     type: string
+    format: uri
     example: 'http://example.com/'
   lastDispatch:
     nullable: true

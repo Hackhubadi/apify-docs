@@ -26,6 +26,7 @@ properties:
     example: false
   requestUrl:
     type: string
+    format: uri
     nullable: true
     example: 'http://example.com/'
   payloadTemplate:

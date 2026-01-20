@@ -9,6 +9,7 @@ properties:
     example: WEB
   clientIp:
     type: string
+    format: ipv4
     example: 172.234.12.34
   userAgent:
     type: string

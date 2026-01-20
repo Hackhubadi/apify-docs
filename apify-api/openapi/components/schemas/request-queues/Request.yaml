@@ -16,6 +16,7 @@ properties:
     example: GET|60d83e70|e3b0c442|https://apify.com/career
   url:
     type: string
+    format: uri
     description: The URL of the request.
     example: https://apify.com/career
   method:
@@ -28,6 +29,7 @@ properties:
     example: 0
   loadedUrl:
     type: string
+    format: uri
     nullable: true
     description: The final URL that was loaded, after redirects (if any).
     example: https://apify.com/jobs

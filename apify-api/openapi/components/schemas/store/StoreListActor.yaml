@@ -39,14 +39,17 @@ properties:
     type: string
   pictureUrl:
     type: string
+    format: uri
     nullable: true
     example: 'https://...'
   userPictureUrl:
     type: string
+    format: uri
     nullable: true
     example: 'https://...'
   url:
     type: string
+    format: uri
     nullable: true
     example: 'https://...'
   stats:

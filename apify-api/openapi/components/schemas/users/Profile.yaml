@@ -9,12 +9,14 @@ properties:
     example: Jane Doe
   pictureUrl:
     type: string
+    format: uri
     example: /img/anonymous_user_picture.png
   githubUsername:
     type: string
     example: torvalds.
   websiteUrl:
     type: string
+    format: uri
     example: 'http://www.example.com'
   twitterUsername:
     type: string

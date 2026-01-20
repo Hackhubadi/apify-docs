@@ -50,4 +50,5 @@ properties:
       - $ref: ./TaskInput.yaml
   standbyUrl:
     type: string
+    format: uri
     nullable: true

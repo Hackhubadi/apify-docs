@@ -17,6 +17,7 @@ properties:
     example: GET|60d83e70|e3b0c442|https://apify.com
   url:
     type: string
+    format: uri
     description: The URL of the request.
     example: https://apify.com
   method:
